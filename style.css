@@ -1,59 +1,80 @@
-body {
-  background-color: #b67a39;
+/* Fontes usadas */
+
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Micro+5&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap");
+
+/* Parte sem classe */
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
-h1 {
-  color: whitesmoke;
-  font-family: "Protest Strike", sans-serif;
-  width: 150px;
-  height: 220px;
-  position: absolute;
-  bottom: 90px;
+body {
+  background-color: #000000;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 h2 {
-  font-family: "Amatic SC", sans-serif;
-  color: saddlebrown;
-  font-size: 40px;
-  position: absolute;
-  left: 200px;
-  top: 15px;
-  width: 350px;
-  height: 320px;
+  color: #add8e6;
+  font-size: 100px;
+  font-family: "Micro 5", sans-serif;
 }
 
-p {
-  color: #ffff;
-  font-family: "Protest Riot", sans-serif;
-  font-size: 20px;
-  position: absolute;
-  left: 200px;
-  top: 100px;
-  width: 350px;
-  height: 320px;
-}
-
-strong {
-  color: #5f431a;
-}
-
-a {
-  font-family: "Protest Strike", sans-serif;
-  position: absolute;
-  color: #3a2910;
-  font-weight: 0;
-  font-size: 14px;
-  background-color: #ec8c02;
-  padding: 10px 30px;
-  border-radius: 30px;
-  bottom: 28px;
-  left: 250px;
-}
+/* Apenas para ajustar o tamano da imagem */
 
 img {
-  position: absolute;
-  top: 95px;
-  right: 150px;
   width: 350px;
   height: 320px;
+}
+
+/* Apenas para destacar o texto */
+
+.texto-destaque {
+  color: #0000ff;
+}
+
+/* A Apresentação, texto da página */
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10%;
+}
+
+.apresentacao__conteudo {
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.apresentacao__conteudo__titulo {
+  color: #1e90ff;
+  font-size: 55px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.apresentacao__conteudo__paragrafo {
+  color: #b0c4de;
+  font-size: 24px;
+  font-family: "Red Hat Mono", monospace;
+}
+
+.apresentacao__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apresentacao__links__botaos {
+  background-color: #1e90ff;
+  width: 250px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 24px;
+  padding: 21.5px 0px;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Kdam Thmor Pro", sans-serif;
 }
