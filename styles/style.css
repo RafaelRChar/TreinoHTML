@@ -1,0 +1,159 @@
+/* Fontes usadas */
+
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Micro+5&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+/* Variáveis de Cores */
+
+:root {
+  /* Rerente as cores da página*/
+  --cor-primaria: #000000;
+  --cor-secundaria: #e1e6e9;
+  --cor-terciaria: rgb(30, 44, 243);
+  /* Rerefente as fontes */
+  --cor-paragrafo: #bac2d3;
+  --cor-titulos-importantes: #0d2eb3; 
+  --cor-destaque: aquamarine;
+  --cor-hover-botoes: #3f3e3e;
+}
+
+/* Reset do CSS. */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Body da página */
+
+body {
+  /* height: 100vh; */
+  background-color: var(--cor-primaria);
+  box-sizing: border-box;
+  color: var(--cor-secundaria);
+}
+
+/* Apenas para ajustar o tamano da imagem */
+
+.imagem-principal {
+  width: 350px;
+  height: 320px;
+}
+
+/* Apenas para destacar o texto */
+
+.texto-destaque {
+  color: var(--cor-titulos-importantes);
+}
+
+.texto-destaque:hover {
+  color: var(--cor-destaque);
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+  padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 80px
+}
+
+.cabecalho__menu__links {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: var(--cor-titulos-importantes);
+}
+
+.cabecalho__menu__links:hover {
+  color: var(--cor-destaque);
+}
+
+/* A Apresentação, Body da Página */
+
+.apresentacao{
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.apresentacao__conteudo__titulo {
+  color: var(--cor-terciaria);
+  font-size: 55px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.apresentacao__conteudo__paragrafo {
+  color: var(--cor-paragrafo);
+  font-size: 24px;
+  font-family: "Red Hat Mono", monospace;
+}
+
+.apresentacao__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  color: var(--cor-secundaria);
+}
+
+.apresentacao__links__botaos {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 378px;
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 21.5px 0px;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.apresentacao__links__botaos:hover {
+  background-color: var(--cor-hover-botoes);
+  color: var(--cor-paragrafo);
+  padding: 22px 0px;
+}
+
+.apresentacao__links__subtitulo__icones {
+  width: 33px;
+  height: 32px;
+}
+
+/* Rodapé da página */
+
+.rodape {
+  padding: 24px;
+  font-size: 35px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-align: center;
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+}
+
+.rodape:hover {
+  background-color: var(--cor-destaque);
+}

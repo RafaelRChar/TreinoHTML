@@ -5,14 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Chove Chuvinha </title>
-        <link rel="icon" type="images/png" href="Imagens Usadas/Chuvinha.png" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="images/png" href="assets/Chuvinha.png" />
+        <link rel="stylesheet" href="styles/style.css">
     </head>
 
     <body>
-
-        <header>
-            <h2> Projeto Chuva - Melhorando o <Strong class="texto-destaque"> CSS e HTML </Strong> </h2>
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__links" href="index.html">
+                    Home
+                </a>
+                <a class="cabecalho__menu__links" href="curiosities.html">
+                    Curiosidades
+                </a>
+            </nav>
         </header>
         <main class="apresentacao">
             <section class="apresentacao__conteudo">
@@ -23,22 +29,27 @@
                     Chuva suave a acarinhar.
                     No ar, um frescor a exalar,
                     Em cada gota, um segredo a revelar.
-                    <br>
-                    <br>
+                </p>
+                <p class="apresentacao__conteudo__paragrafo">
                     Nuvens negras se abraçam no alto,
                     Gotas de prata em seu manto.
                     A terra sorri ao receber,
                     O beijo úmido que a faz florescer.
                 </p>
                 <div class="apresentacao__links">
-                    <a href="https://www.youtube.com/watch?v=5NhLg1F9pMo" class="apresentacao__links__botaos"> Barulho de chuva </a>
-                    <a href="https://www.youtube.com/shorts/TFQRRo8UROw" class="apresentacao__links__botaos"> Curiosidades </a>
+                    <h2 class="apresentacao__links__subtitulo"> Coisinhas Extras: </h2>
+                    <a href="https://www.youtube.com/watch?v=5NhLg1F9pMo" class="apresentacao__links__botaos"> <img
+                            src="assets/Chuvinha.png" alt="Núvem de Chuva"
+                            class="apresentacao__links__subtitulo__icones">Barulho de chuva </a>
+                    <a href="https://www.youtube.com/watch?v=E_Ebi1gmYZo" class="apresentacao__links__botaos"> <img
+                            src="assets/Youtube Icone Azul.png" alt="Chuva feliz"
+                            class="apresentacao__links__subtitulo__icones"> Musiquinha </a>
                 </div>
             </section>
-            <img src="Imagens Usadas/Chuvinha_Animada.gif" alt="Uma Nuvem de chuva!!">
+            <img src="assets/Chuvinha_Animada.gif" alt="Uma Nuvem de chuva!!" class="imagem-principal">
         </main>
-        <footer>
-            <h1 class="apresentacao__conteudo__paragrafo"> Rafael Rossi </h1>
+        <footer class="rodape">
+            <p> Desenvolvido por CharLost </p>
         </footer>
     </body>
 
